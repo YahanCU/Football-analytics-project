@@ -13,11 +13,11 @@ This section is to find out the best squad given selected information by users. 
 #### < Compare the performance between two players, two clubs or two countries >
 This part is aimed to compare different players, clubs, and countries in several aspects, like age, value, potential, and skills. The part also extends to provides all simple predictions of game results based on two clubs’ (or countries’) five formations. The comparison results are mainly presented in two graphs and one table. 
 
-### Part III:(User Interaction):
+### Part III: (User Interaction):
 #### < Measure a player’s value aligned with multiple factors >
 This portion is designed to give users some insights about a player’s value(€) with associated impacting factors and a player’s value(€) position within the whole FIFA. We use a line chart to plot a relationship between age and score for a individual player. We also create linear regression models to predict the correlation between value(€) and three different factors(Age, Overall rating, Potential rating) among the whole FIFA, which is further used to spot a individual player’s position the user chose.   
 
-### Part IV:(User Interaction)
+### Part IV: (User Interaction)
 #### < Find required ability for every position >
 This part offers our users some understanding about what important abilities each group of positions require based on the current FIFA registered players. To clearly and visually present our result, we use principal components analysis that reduces the dimensions and sum up these data to 4 abilities that a soccer player should have.
  
