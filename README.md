@@ -1,34 +1,32 @@
 # Exploration in 2018 FIFA Player Library
-========
-Team: I love coding
-Members: Yahan Hu, Chenchen He, Lili Yan, Shipei Feng
+### Team: I love coding
+### Members: Yahan Hu, Chenchen He, Lili Yan, Shipei Feng
  
 ## Introduction:
-------------
 The growing interests in soccer and FIFA drive the creation of our project. Our project provides a well-rounded library presenting summarized statistics and analysis by extracting player personal attributes, player performance attributes, and ratings at all positions. User interaction and data visualization enable users to customize their questions and find answers out of our project. In general, our project is further separated into 4 parts that bring different insights about FIFA to users.
  
 ### Part I: (User Interaction): 
-< Find the best squad for each formation in terms of players, clubs, countries >
+#### < Find the best squad for each formation in terms of players, clubs, countries >
 This section is to find out the best squad given selected information by users. Users choices include formation type, nationality, and club. 
  
 ### Part II: (User Interaction):
-< Compare the performance between two players, two clubs or two countries >
+#### < Compare the performance between two players, two clubs or two countries >
 This part is aimed to compare different players, clubs, and countries in several aspects, like age, value, potential, and skills. The part also extends to provides all simple predictions of game results based on two clubs’ (or countries’) five formations. The comparison results are mainly presented in two graphs and one table. 
 
 ### Part III:(User Interaction):
-< Measure a player’s value aligned with multiple factors >
+#### < Measure a player’s value aligned with multiple factors >
 This portion is designed to give users some insights about a player’s value(€) with associated impacting factors and a player’s value(€) position within the whole FIFA. We use a line chart to plot a relationship between age and score for a individual player. We also create linear regression models to predict the correlation between value(€) and three different factors(Age, Overall rating, Potential rating) among the whole FIFA, which is further used to spot a individual player’s position the user chose.   
 
 ### Part IV:(User Interaction)
-< Find required ability for every position >
+#### < Find required ability for every position >
 This part offers our users some understanding about what important abilities each group of positions require based on the current FIFA registered players. To clearly and visually present our result, we use principal components analysis that reduces the dimensions and sum up these data to 4 abilities that a soccer player should have.
  
 ## Data Description:
 --------
-The data is downloaded from the website listed below:
+#### The data is downloaded from the website listed below:
 https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset#CompleteDataset.csv
 
-The FIFA 18 complete Dataset includes:
+#### The FIFA 18 complete Dataset includes:
 ●	Player personal attributes (Age, Value, Nationality, club, etc.); 
 ●	Player performance attributes (Acceleration, Aggression,Balance etc.)  
 ●	Player preferred position (CM, FB, RAM, RCM etc.)  and both overall ratings and potential ratings at all positions.
@@ -36,9 +34,8 @@ These attributes provide us with huge varieties of indicators to analyze these f
  
  
 ## Run Instruction:
----------------
 ### Part I (User Interaction): 
-< Find the best squad for each formation in terms of players, clubs, countries >
+#### < Find the best squad for each formation in terms of players, clubs, countries >
 The goal of this section is to find the best Squad (including player’s name, preferred position, overall rate, nationality, and club), given the selected information. The performance is measured by the overall rating.
  
 Find the best Squad given the selected formation among all players.
@@ -68,7 +65,7 @@ This library provides a list of players under different formations within one cl
  
  
 ### Part II (User Interaction):
-< Compare the performance between two players, two clubs or two countries >
+#### < Compare the performance between two players, two clubs or two countries >
 This part is used to compare different players, clubs, and countries in several aspects.
 ●	First, we can compare any two players by function player_compare().
 This function will require input at first. Following the hint("Enter two players' names you want to compare(separated by ',')), the function will automatically extract parameters:
@@ -90,6 +87,7 @@ Then the result includes one prediction table and two graphs, bar chart and rada
  
  
 ### Part III:
+#### < Measure a player’s value aligned with multiple factors >
 The aim of this part is to plot the trend between the two factors
 ●	 Find the relationship between age and rating (overall score and potential score) by function Age_Score()
 This program takes one parameter
@@ -122,7 +120,7 @@ This function worthbuy()  has no input.
 The output is a single table, containing information of 10 most worth-buying players. Among all worth-buying players, their overall scores are the highest. The table is descending sorted by potential scores.
 
 ### Part IV:
-< Find required ability for every position >
+#### < Find required ability for every position >
 This part illustrates the most important abilities each group of positions require based on the current FIFA registered players. The final result is presented through the following process:
 ●	Step1: 
 This step we calculate the mean of dataset group by the position. 
