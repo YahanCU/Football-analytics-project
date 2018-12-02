@@ -37,10 +37,11 @@ These attributes provide us with huge varieties of indicators to analyze these f
 #### < Find the best squad for each formation in terms of players, clubs, countries >
 The goal of this section is to find the best Squad (including player’s name, preferred position, overall rate, nationality, and club), given the selected information. The performance is measured by the overall rating.
  
-Find the best Squad given the selected formation among all players.
+●	Find the best Squad given the selected formation among all players.
 The program takes one parameter:
 Ø  Formation (eg. 433, 424, 442, 343, 451)
 The best Squad for the formation user chose is predicted by the program showing below:
+https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-1.png
  
 This table shows the best Squad you can get under the formation you chose based on a player’s overall performance. This information could give you some insights about top individual player’s overall skills. 
 
@@ -48,17 +49,19 @@ This table shows the best Squad you can get under the formation you chose based 
 This program takes one parameter:
 Ø  Country/Nationality (eg. Brazil, Spain, Germany etc.)
 The best Squads for different formations are listed below given the selected country.
- 
- 
+https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-2.png
+https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-3.png
+https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-4.png
+  
 This table shows the best Squad you can get under different formations within one country. This information is able to offer you some guidance about players’ selection under specific formation or compare overall performances between formations. 
 
 ●	Find the best Squad for different formation given the selected club.
       This program takes one parameter:
 Ø  Club (eg. Manchester United, Manchester City, Juventus etc.)
        The best Squads for different formations are listed below given the selected country.
- 
+https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-6.png
+https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-7.png
   
- 
 This library provides a list of players under different formations within one club. The information can be used to provide you with some insights about players’ selections within a club and comparisons between different formations.  
  
  
