@@ -109,7 +109,9 @@ Help your decision on whether buying a player or not using the function Value().
 This program takes one parameter
 Ø  Player name (eg. Pepe)
   
- ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3.png)  
+ ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3-1.png)  
+ ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3-2.png)
+ ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3-3.png)
 The output includes three pictures and two tables.
 The upper picture shows the polyfitting curve of age and value, blue scatters are the median value of each age group. Input “Pepe”, the yellow dotted line means at Pepe’s age (34), the polyffting median value is about €600,000. The following two figures are the same, and the only difference is the x-axis changes to overall score and potential score.
 The first table contains basic information of “Pepe”, especially showing the difference of his real value and the median value. 
