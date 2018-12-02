@@ -92,13 +92,13 @@ The aim of this part is to measure players’ value aligned with multiple factor
 ●	 Find the relationship between age and rating (overall score and potential score) by function Age_Score()
 This program takes one parameter
 Ø  Player name (eg. A. Aseri)
-![image](https://github.com/YahanCU/Project-for-tools/raw/master/iamge_yll/1.png)
+ ![Age_Score](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/1.png)
 The curve shows the trend of scores changes along with age. It can be clearly seen that potential score decreases slowly with age, while overall score increases with age, and the two scores stay equal after  30 years old, indicating the player almost reaching out to his career peak. After 35 years old, the whole score of the player decreases significantly, which fits the athlete's life cycle.
 The star-shaped points represent the overall and potential score of the player user wants to know. Take A. Aseri as an example, his potential and overall score are both higher than the mean, and the difference is large, showing he has better performance than his peer’s and has great potential for growth.
 
 ●	 Linear Regression
 This function regression() has no input, the result is shown in the image and table.
-![image](https://github.com/YahanCU/Project-for-tools/raw/master/iamge_yll/2.png)
+ ![regression](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/2.png)
 Using the multiple linear regression, we have an equation describes the relationship between value and two factors: value = 0.6463 potential + 0.2336 age - 0.0015.
 As shown in the 3-dimensional plot, after removing the high value of star players, the regression fits the real scatters. In the scale of [-4,3], the minimum mean square of 0.7828 is small enough to assert this regression is accurate.
 
@@ -106,7 +106,7 @@ As shown in the 3-dimensional plot, after removing the high value of star player
 Help your decision on whether buying a player or not using the function Value().
 This program takes one parameter
 Ø  Player name (eg. Pepe)
-![image](https://github.com/YahanCU/Project-for-tools/raw/master/iamge_yll/3.png)
+ ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3.png)
 The output includes three pictures and two tables.
 The upper picture shows the polyfitting curve of age and value, blue scatters are the median value of each age group. Input “Pepe”, the yellow dotted line means at Pepe’s age (34), the polyffting median value is about €600,000. The following two figures are the same, and the only difference is the x-axis changes to overall score and potential score.
 The first table contains basic information of “Pepe”, especially showing the difference of his real value and the median value. 
@@ -115,7 +115,7 @@ The second table shows the decision we make, after calculating we find he is wor
 
 ●	10 worth-buying players
 This function worthbuy()  has no input.
-![image](https://github.com/YahanCU/Project-for-tools/raw/master/iamge_yll/4.png)
+ ![worthbuy](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/4.png)
 The output is a single table, containing information of 10 most worth-buying players. Among all worth-buying players, their overall scores are the highest. The table is descending sorted by potential scores.
 
 ### Part IV:
