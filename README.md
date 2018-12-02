@@ -22,7 +22,6 @@ This portion is designed to give users some insights about a playerâ€™s value(â‚
 This part offers our users some understanding about what important abilities each group of positions require based on the current FIFA registered players. To clearly and visually present our result, we use principal components analysis that reduces the dimensions and sum up these data to 4 abilities that a soccer player should have.
  
 ## Data Description:
---------
 #### The data is downloaded from the website listed below:
 https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset#CompleteDataset.csv
 
