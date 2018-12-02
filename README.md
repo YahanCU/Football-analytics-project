@@ -1,105 +1,151 @@
-Team name: I love coding
-Team members: Yahan Hu, Chenchen He, Lili Yan, Shipei Feng
+Exploration in 2018 FIFA Player Library
+Team: I love coding
+Members: Yahan Hu, Chenchen He, Lili Yan, Shipei Feng
  
 Introduction:
-The growing interests in soccer and FIFA drive the creation of our project.   Our project provides a well-rounded library presenting summarized statistics and analysis by extracting player personal attributes, player performance attributes, and ratings at all positions. User interaction and data visualization enable users to customize their questions and find answers out of our project. In general, our project is further separated into 4 parts that bring different insights about FIFA to users.
+The growing interests in soccer and FIFA drive the creation of our project. Our project provides a well-rounded library presenting summarized statistics and analysis by extracting player personal attributes, player performance attributes, and ratings at all positions. User interaction and data visualization enable users to customize their questions and find answers out of our project. In general, our project is further separated into 4 parts that bring different insights about FIFA to users.
  
-Part I: Find the best Squad (User Interaction)
-This section is to find out the best squad given selected information by users.  
+Part I: (User Interaction): 
+< Find the best squad for each formation in terms of players, clubs, countries >
+This section is to find out the best squad given selected information by users. Users choices include formation type, nationality, and club. 
  
-Part II: Player/Country/Club comparisons (User Interaction)
-This part is used to compare different players, clubs, and countries regarding their age, current overall rating, potential rating and value.  The comparison can further extend to players’ specific skills.
- 
-Part III: Help determine whether it is worthwhile to buy a player or not (User Interaction)
-The aim of this part is to give a suggestion when considering buying a certain player. First, plot the trend between two factors: age and score (overall and potential), and mark out the point of the player user want to know, help to figure out which stage the player is at. Then, do multiple linear regression to find out the relationship between response variable: value and explanatory variables: age and potential score. After that, separately polyfit value and three factors: age, overall score, and potential score , then use the regression coefficients to help decide the certain player is worth buying or not. Finally, use the same process to find out 10 players who has high performance-value ratio with highest overall scores, they are most worth buying.
- 
-Part IV: Since there are too many data to estimate the ability of players, we want to reduce the dimensions and sum up these data to 4 abilities that a soccer player should have. Also, use the new variables to explain the original dataset and show which is the most important ability that a certain position player should have. We use Principal components analysis to solve this problem.
+Part II: (User Interaction):
+< Compare the performance between two players, two clubs or two countries >
+This part is aimed to compare different players, clubs, and countries in several aspects, like age, value, potential, and skills. The part also extends to provides all simple predictions of game results based on two clubs’ (or countries’) five formations. The comparison results are mainly presented in two graphs and one table. 
+
+Part III:(User Interaction):
+< Measure a player’s value aligned with multiple factors >
+This portion is designed to give users some insights about a player’s value(€) with associated impacting factors and a player’s value(€) position within the whole FIFA. We use a line chart to plot a relationship between age and score for a individual player. We also create linear regression models to predict the correlation between value(€) and three different factors(Age, Overall rating, Potential rating) among the whole FIFA, which is further used to spot a individual player’s position the user chose.   
+
+Part IV:(User Interaction)
+< Find required ability for every position >
+This part offers our users some understanding about what important abilities each group of positions require based on the current FIFA registered players. To clearly and visually present our result, we use principal components analysis that reduces the dimensions and sum up these data to 4 abilities that a soccer player should have.
  
 Data Description:
+The data is downloaded from the website listed below:
+https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset#CompleteDataset.csv
+
+The FIFA 18 complete Dataset includes:
+●	Player personal attributes (Age, Value, Nationality, club, etc.); 
+●	Player performance attributes (Acceleration, Aggression,Balance etc.)  
+●	Player preferred position (CM, FB, RAM, RCM etc.)  and both overall ratings and potential ratings at all positions.
+These attributes provide us with huge varieties of indicators to analyze these four topics listed above.
  
  
- 
- 
- 
- Run instruction:
- 
-Part I:
+Run Instruction:
+
+Part I (User Interaction): 
+< Find the best squad for each formation in terms of players, clubs, countries >
 The goal of this section is to find the best Squad (including player’s name, preferred position, overall rate, nationality, and club), given the selected information. The performance is measured by the overall rating.
  
-·      Find the best Squad given the selected formation among all players.
+Find the best Squad given the selected formation among all players.
 The program takes one parameter:
 Ø  Formation (eg. 433, 424, 442, 343, 451)
 The best Squad for the formation user chose is predicted by the program showing below:
-·      Find the best Squad for different formation given the selected country.
+ 
+This table shows the best Squad you can get under the formation you chose based on a player’s overall performance. This information could give you some insights about top individual player’s overall skills. 
 
+·      Find the best Squad for different formation given the selected country.
 This program takes one parameter:
 Ø  Country/Nationality (eg. Brazil, Spain, Germany etc.)
 The best Squads for different formations are listed below given the selected country.
+ 
+ 
+This table shows the best Squad you can get under different formations within one country. This information is able to offer you some guidance about players’ selection under specific formation or compare overall performances between formations. 
+
 ·      Find the best Squad for different formation given the selected club.
       This program takes one parameter:
-
-
 Ø  Club (eg. Manchester United, Manchester City, Juventus etc.)
        The best Squads for different formations are listed below given the selected country.
  
+  
  
-
+This library provides a list of players under different formations within one club. The information can be used to provide you with some insights about players’ selections within a club and comparisons between different formations.  
  
  
  
- 
-Part II:
-This part is used to compare different players, clubs and countries regarding of their age, current overall rating, potential rating and value.  The comparison can further extend to players’ specific skills.
-·      Compare two players. This program is designed to present the comparison between two FIFA players in terms of their age, overall rating, potential rating, value and skill sets.
-This program takes two parameters:
+Part II (User Interaction):
+< Compare the performance between two players, two clubs or two countries >
+This part is used to compare different players, clubs, and countries in several aspects.
+●	First, we can compare any two players by function player_compare().
+This function will require input at first. Following the hint("Enter two players' names you want to compare(separated by ',')), the function will automatically extract parameters:
 Ø  Two player names (eg. Cristiano Ronaldo, Neymar)
-
-
+Then the result includes two graphs, bar chart and radar graph as following:
+ 
         	
-·      Compare two clubs.
-This portion is created to compare two different clubs regarding of their average age, average overall rating, average potential rating, value and skillsets.
-This program takes two parameters:
-ØTwo club’s name (eg. Paris Saint-Germain,FC Barcelona)
-
+●	Second, we can compare any two clubs by function club_compare().
+This function will require input at first. Following the hint("Enter two clubs' names you want to compare(separated by ',')), the function will automatically extract parameters:
+Ø Two club’s name (eg. Paris Saint-Germain, FC Barcelona)
+Then the result includes one prediction table and two graphs, bar chart and radar graph as following.
+ 
 
  
-·      Compare two countries.
-This portion is created to compare two different countries regarding of their average age, average overall rating, average potential rating, value and skillsets.
-This program takes two parameters:
+●	Finally, we can compare any two countries by function country_compare().
+This function will require input at first. Following the hint("Enter two countries’' names you want to compare(separated by ',')), the function will automatically extract parameters:
 ØTwo countries (eg. Germany, France)
-
-
+Then the result includes one prediction table and two graphs, bar chart and radar graph as following.
+ 
  
 Part III:
-The aim of this part is to plot the trend between two factors
-·      Find the trend between factors and rating (overall and potential)
+The aim of this part is to plot the trend between the two factors
+●	 Find the relationship between age and rating (overall score and potential score) by function Age_Score()
 This program takes one parameter
 Ø  Player name (eg. A. Aseri)
+  
+The curve shows the trend of scores changes along with age. It can be clearly seen that potential score decreases slowly with age, while overall score increases with age, and the two scores stay equal after  30 years old, indicating the player almost reaching out to his career peak. After 35 years old, the whole score of the player decreases significantly, which fits the athlete's life cycle.
+The star-shaped points represent the overall and potential score of the player user wants to know. Take A. Aseri as an example, his potential and overall score are both higher than the mean, and the difference is large, showing he has better performance than his peer’s and has great potential for growth.
+
+●	 Linear Regression
+This function regression() has no input, the result is shown in the image and table.
  
+Using the multiple linear regression, we have an equation describes the relationship between value and two factors: value = 0.6463 potential + 0.2336 age - 0.0015.
+As shown in the 3-dimensional plot, after removing the high value of star players, the regression fits the real scatters. In the scale of [-4,3], the minimum mean square of 0.7828 is small enough to assert this regression is accurate.
+
+●	The decision of a certain player
+Help your decision on whether buying a player or not using the function Value().
+This program takes one parameter
+Ø  Player name (eg. Pepe)
+
+ 
+The output includes three pictures and two tables.
+The upper picture shows the polyfitting curve of age and value, blue scatters are the median value of each age group. Input “Pepe”, the yellow dotted line means at Pepe’s age (34), the polyffting median value is about €600,000. The following two figures are the same, and the only difference is the x-axis changes to overall score and potential score.
+The first table contains basic information of “Pepe”, especially showing the difference of his real value and the median value. 
+The second table shows the decision we make, after calculating we find he is worth buying.
+
+
+·      10 worth-buying players
+This function worthbuy()  has no input.
+ 
+The output is a single table, containing information of 10 most worth-buying players. Among all worth-buying players, their overall scores are the highest. The table is descending sorted by potential scores.
+
 Part IV:
+< Find required ability for every position >
+This part illustrates the most important abilities each group of positions require based on the current FIFA registered players. The final result is presented through the following process:
 Step1: 
 This step we calculate the mean of dataset group by the position. 
 For this step just run the cell.
 Step2:
 Draw the graph of Cumulative Variance to decide how many new variables should we choose. From the result, we can see that 4 is the best number. 
-
+ 
 Step3:
 Use the PCA model to reduce the dimension of the dataset. The result_position show how the new four variables replace the original variables. 
-
-The picture below is the relationship between the new variables and the original variables.
  
+The picture below is the relationship between the new variables and the original variables.
+  
 Step4:
-We visualize the result.  
-First: [Volleys, FInishing, Longshots, Penalties…] All of these data are related to attack so that this is the ability of Attack. 
-Second: [Sliding tackle, Standing tackle, Interception…] All these are related to defense, so this is the ability to Defend.
-This two are the picture about the second new variables and we summarize it as Attack_Defence. The left picture is the original variables which have positive effects for this, the right one is the variables that have a negative effect on this. 
+Results are shown below: 
+First: [Volleys, FInishing, Longshots, Penalties…] All of these performance attributes are associated with Attack. 
+Second: [Sliding tackle, Standing tackle, Interception…] All these performance attributes are associated with Defend.
+Based on these two graphs, we summarize them as the Attack_Defence. The left picture is the original variables which have positive effects for this, the right one is the variables that have a negative effect on this. 
+ 
 
+Step5:
+This step takes one parameter:
+Ø  Position (eg:'RB','LM','RM','CF','CDM','ST','LW','CM','RWB')
+Output shows what abilities a good player should have in that position. 
+For the result below, we can see a high positive degree of Attack_Defence, meaning AD is the key to a good CF. Also special and accuracy physical fitness all have positive effects on  a good CF. 
 
- Step5:
-You can input the position you are interested in, and the output is a graph, that shows what abilities a good player should have in that position. 
-For the result below, we can see that the Attack_Defence, it is really big for positive, which means the attack is really important, also, special and accuracy physical fitness is important for a player at the center forward position. 
-The input could be 'RB','LM','RM','CF','CDM','ST','LW','CM','RWB','CB','LWB','RW','CAM','LB'
-
+ 
 Bibliography:
 Libraries:
 Ø  numpy
