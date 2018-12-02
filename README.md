@@ -74,7 +74,8 @@ This function will require input at first. Following the hint("Enter two players
 Ø  Two player names (eg. Cristiano Ronaldo, Neymar)
 
 Then the result includes two graphs, bar chart and radar graph as following:
-![compareplayer](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-1.jpg)
+
+![compareplayer](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-1.png)
 
         	
 ●	Second, we can compare any two clubs by function club_compare().
@@ -84,7 +85,8 @@ This function will require input at first. Following the hint("Enter two clubs' 
 Ø Two club’s name (eg. Paris Saint-Germain, FC Barcelona)
 
 Then the result includes one prediction table and two graphs, bar chart and radar graph as following:
-![compareclub](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-2.jpg) 
+
+![compareclub](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-2.png) 
 
  
 ●	Finally, we can compare any two countries by function country_compare().
@@ -94,7 +96,8 @@ This function will require input at first. Following the hint("Enter two countri
 ØTwo countries (eg. Germany, France)
 
 Then the result includes one prediction table and two graphs, bar chart and radar graph as following:
-![comparecountry](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-3.jpg) 
+
+![comparecountry](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-3.png) 
  
 ### Part III (User Interaction):
 #### < Measure a player’s value aligned with multiple factors >
