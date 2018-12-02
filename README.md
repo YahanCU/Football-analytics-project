@@ -66,24 +66,35 @@ This library provides a list of players under different formations within one cl
 ### Part II (User Interaction):
 #### < Compare the performance between two players, two clubs or two countries >
 This part is used to compare different players, clubs, and countries in several aspects.
+
 ●	First, we can compare any two players by function player_compare().
+
 This function will require input at first. Following the hint("Enter two players' names you want to compare(separated by ',')), the function will automatically extract parameters:
+
 Ø  Two player names (eg. Cristiano Ronaldo, Neymar)
+
 Then the result includes two graphs, bar chart and radar graph as following:
- 
+![compareplayer](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/part2-1.jpg)
+
         	
 ●	Second, we can compare any two clubs by function club_compare().
+
 This function will require input at first. Following the hint("Enter two clubs' names you want to compare(separated by ',')), the function will automatically extract parameters:
+
 Ø Two club’s name (eg. Paris Saint-Germain, FC Barcelona)
-Then the result includes one prediction table and two graphs, bar chart and radar graph as following.
- 
+
+Then the result includes one prediction table and two graphs, bar chart and radar graph as following:
+![compareclub](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/part2-2.jpg) 
 
  
 ●	Finally, we can compare any two countries by function country_compare().
+
 This function will require input at first. Following the hint("Enter two countries’' names you want to compare(separated by ',')), the function will automatically extract parameters:
+
 ØTwo countries (eg. Germany, France)
-Then the result includes one prediction table and two graphs, bar chart and radar graph as following.
- 
+
+Then the result includes one prediction table and two graphs, bar chart and radar graph as following:
+![comparecountry](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/part2-3.jpg) 
  
 ### Part III (User Interaction):
 #### < Measure a player’s value aligned with multiple factors >
