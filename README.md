@@ -37,11 +37,10 @@ These attributes provide us with huge varieties of indicators to analyze these f
 #### < Find the best squad for each formation in terms of players, clubs, countries >
 The goal of this section is to find the best Squad (including player’s name, preferred position, overall rate, nationality, and club), given the selected information. The performance is measured by the overall rating.
  
-●	Find the best Squad given the selected formation among all players.
+Find the best Squad given the selected formation among all players.
 The program takes one parameter:
 Ø  Formation (eg. 433, 424, 442, 343, 451)
 The best Squad for the formation user chose is predicted by the program showing below:
- ![Best_squad_formation](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-1.png)
  
 This table shows the best Squad you can get under the formation you chose based on a player’s overall performance. This information could give you some insights about top individual player’s overall skills. 
 
@@ -49,19 +48,17 @@ This table shows the best Squad you can get under the formation you chose based 
 This program takes one parameter:
 Ø  Country/Nationality (eg. Brazil, Spain, Germany etc.)
 The best Squads for different formations are listed below given the selected country.
-![country_squad_formation1](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-2.png)
-![country_squad_formation2](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-3.png)
-![country_squad_formation3](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-4.png)
-  
+ 
+ 
 This table shows the best Squad you can get under different formations within one country. This information is able to offer you some guidance about players’ selection under specific formation or compare overall performances between formations. 
 
 ●	Find the best Squad for different formation given the selected club.
       This program takes one parameter:
 Ø  Club (eg. Manchester United, Manchester City, Juventus etc.)
        The best Squads for different formations are listed below given the selected country.
-![club_squad_formation1](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-6.png)
-![club_squad_formation1](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/Part1-7.png)
+ 
   
+ 
 This library provides a list of players under different formations within one club. The information can be used to provide you with some insights about players’ selections within a club and comparisons between different formations.  
  
  
@@ -95,13 +92,15 @@ The aim of this part is to measure players’ value aligned with multiple factor
 ●	 Find the relationship between age and rating (overall score and potential score) by function Age_Score()
 This program takes one parameter
 Ø  Player name (eg. A. Aseri)
- ![Age_Score](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/1.png)
+  
+ ![Age_Score](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/1.png)    
 The curve shows the trend of scores changes along with age. It can be clearly seen that potential score decreases slowly with age, while overall score increases with age, and the two scores stay equal after  30 years old, indicating the player almost reaching out to his career peak. After 35 years old, the whole score of the player decreases significantly, which fits the athlete's life cycle.
 The star-shaped points represent the overall and potential score of the player user wants to know. Take A. Aseri as an example, his potential and overall score are both higher than the mean, and the difference is large, showing he has better performance than his peer’s and has great potential for growth.
 
 ●	 Linear Regression
 This function regression() has no input, the result is shown in the image and table.
- ![regression](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/2.png)
+  
+ ![regression](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/2.png)  
 Using the multiple linear regression, we have an equation describes the relationship between value and two factors: value = 0.6463 potential + 0.2336 age - 0.0015.
 As shown in the 3-dimensional plot, after removing the high value of star players, the regression fits the real scatters. In the scale of [-4,3], the minimum mean square of 0.7828 is small enough to assert this regression is accurate.
 
@@ -109,7 +108,8 @@ As shown in the 3-dimensional plot, after removing the high value of star player
 Help your decision on whether buying a player or not using the function Value().
 This program takes one parameter
 Ø  Player name (eg. Pepe)
- ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3.png)
+  
+ ![Value](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/3.png)  
 The output includes three pictures and two tables.
 The upper picture shows the polyfitting curve of age and value, blue scatters are the median value of each age group. Input “Pepe”, the yellow dotted line means at Pepe’s age (34), the polyffting median value is about €600,000. The following two figures are the same, and the only difference is the x-axis changes to overall score and potential score.
 The first table contains basic information of “Pepe”, especially showing the difference of his real value and the median value. 
@@ -118,7 +118,8 @@ The second table shows the decision we make, after calculating we find he is wor
 
 ●	10 worth-buying players
 This function worthbuy()  has no input.
- ![worthbuy](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/4.png)
+  
+ ![worthbuy](https://github.com/YahanCU/Project-for-tools/blob/master/image_yll/4.png)  
 The output is a single table, containing information of 10 most worth-buying players. Among all worth-buying players, their overall scores are the highest. The table is descending sorted by potential scores.
 
 ### Part IV:
