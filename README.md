@@ -81,7 +81,10 @@ Then the result includes two graphs, bar chart and radar graph as following:
 
 ![compareplayer](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-1.png)
 
-        	
+First from the bar chart, we can easily compare players’current performance and future performance according to overall rate and potential separately. Also based on age, we could learn which one player has a longer career. Those differences may finally determine which player has a higher value, which has been presented in labels next to names.
+
+Then, from the radar graph, we could have a clear view of differences in two players’ capability. For example, Ronaldo is significantly better than Neymar in two aspects, Shot power and strength, while Neymar is little better than Rnaldo about Dribbing and Acceleration. In the different formation, the differences of those players’skills may lead to the game to be won or lost.
+
 ●	Second, we can compare any two clubs by function club_compare().
 
 This function will require input at first. Following the hint("Enter two clubs' names you want to compare(separated by ',')), the function will automatically extract parameters:
@@ -92,6 +95,11 @@ Then the result includes one prediction table and two graphs, bar chart and rada
 
 ![compareclub](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-2.png) 
 
+First from prediction table, we could obtain simple predicted results for two clubs when they choose five kinds of formation. For each club, we find the best squad for each formation. So the column,Overall rate, means the sum of 11 players’overall rate in the best squad given a certain formation. According this table, we can find that the formation is actually important. Sometimes, a club can win the game even it has lower comprehensive capacity, if it chooses a proper formation.
+
+Then from the bar chart, we can easily compare clubs’current performance and future performance according to the average of their players’overall rate and potential separately. Also based on average age, we could learn which one club is more energetic. Those differences may finally determine which club’s player has a higher average value, which has been presented in labels next to names.
+
+Finally from the radar graph, we could have a clear view of differences in two clubs’ capability. For example, Paris is little better than FC about Finishing and Ball control. Thus, if Paris chooses a formation more focusing on Forward and Midfielder, it would be more likely to win the game with FC. This analysis can be revealed by the prediction table above.
  
 ●	Finally, we can compare any two countries by function country_compare().
 
@@ -102,6 +110,12 @@ This function will require input at first. Following the hint("Enter two countri
 Then the result includes one prediction table and two graphs, bar chart and radar graph as following:
 
 ![comparecountry](https://github.com/YahanCU/Project-for-tools/blob/master/images/part2-3.png) 
+
+First from prediction table, we could obtain simple predicted results for two countries when they choose five kinds of formation. For each club, we find the best squad for each formation. So the column, Overall rate, means the sum of 11 players’overall rate in the best squad given a certain formation. According this table, we can find that the formation is actually important. Sometimes, a country can win the game even it has lower comprehensive capacity, if it chooses a proper formation.
+
+Then from the bar chart, we can easily compare countries’current performance and future performance according to the average of their players’overall rate and potential separately. Also based on average age, we could learn which one country is more energetic. Those differences may finally determine which country’s player has a higher average value, which has been presented in labels next to names.
+
+Finally from the radar graph, we could have a clear view of differences in two countries’ capability. For example, Germany has similar capability with France. Thus, the chance that Germany win the games with France is almost 50%, which can be figured out in prediction table.
  
 ### Part III (User Interaction):
 #### < Measure a player’s value aligned with multiple factors >
