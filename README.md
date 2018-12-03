@@ -216,6 +216,6 @@ For the result below, we can see a high positive degree of Attack_Defence(toward
  
 ### Websites:
 http://www.soccer-training-guide.com/soccer-formations.html#.XAHCHpNKjEp
- 
- 
-
+https://blog.csdn.net/LULEI1217/article/details/49386295 
+https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html 
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html
