@@ -159,9 +159,11 @@ The output is a single table, containing information of 10 most worth-buying pla
 ### Part IV:
 #### < Find required ability for every position >
 This part illustrates the most important abilities each group of positions require based on the current FIFA registered players. The final result is presented through the following process:
+
 ●	Step1: 
 This step we calculate the mean of dataset group by the position. 
 For this step just run the cell.
+
 ●	Step2:
 Draw the graph of Cumulative Variance to decide how many new variables should we choose. From the result, we can see that 4 is the best number. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_00.jpg)
