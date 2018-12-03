@@ -4,6 +4,13 @@
  
 ## Introduction:
 The growing interests in soccer and FIFA drive the creation of our project. Our project provides a well-rounded library presenting summarized statistics and analysis by extracting player personal attributes, player performance attributes, and ratings at all positions. User interaction and data visualization enable users to customize their questions and find answers out of our project. In general, our project is further separated into 4 parts that bring different insights about FIFA to users.
+
+## Installation:
+!pip install prettytable
+
+!pip install msgpack
+
+!pip install wordcloud
  
 ### Part I: (User Interaction): 
 #### < Find the best squad for each formation in terms of players, clubs, countries >
@@ -11,7 +18,7 @@ This section is to find out the best squad given selected information by users. 
  
 ### Part II: (User Interaction):
 #### < Compare the performance between two players, two clubs or two countries >
-This part is aimed to compare different players, clubs, and countries in several aspects, like age, value, potential, and skills. The part also extends to provides all simple predictions of game results based on two clubs’ (or countries’) five formations. The comparison results are mainly presented in two graphs and one table. 
+This part is aimed to compare different players, clubs, and countries in several aspects, like age, value, potential, and skills. The part also extends to provide all simple predictions of game results based on two clubs’ (or countries’) five formations. The comparison results are mainly presented in two graphs and one table. 
 
 ### Part III: (User Interaction):
 #### < Measure a player’s value aligned with multiple factors >
@@ -19,7 +26,7 @@ This portion is designed to give users some insights about a player’s value(�
 
 ### Part IV: (User Interaction)
 #### < Find required ability for every position >
-This part offers our users some understanding about what important abilities each group of positions require based on the current FIFA registered players. To clearly and visually present our result, we use principal components analysis that reduces the dimensions and sum up these data to 4 abilities that a soccer player should have.
+This part offers our users some understanding about what important abilities each group of positions require based on the current FIFA registered players. To clearly and visually present our result, we use principal components analysis that reduces the dimensions and sum up these data to 3 abilities that a soccer player should have.
  
 ## Data Description:
 #### The data is downloaded from the website listed below:
@@ -170,10 +177,10 @@ Draw the graph of Cumulative Variance to decide how many new variables should we
  
 ●	Step3:
 Use the PCA model to reduce the dimension of the dataset. 
-The picture below is the relationship between the new variables(Special, Attack-Defense,Dribble-Accuracy) and the original variables(Age,Special,Accelaration etc.). Basically,we summarize the original attributes into three attributes. 
+The picture below is the relationship between the new variables(Special, Attack-Defense,Dribble-Accuracy) and the original variables(Age,Special,Accelaration etc.). Basically,we summarize the original attributes into three new attributes. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_1.jpg)
 
-The result_position show how the new three variables explain the origin dataset for the ability of every position('CF''CDM','ST','LW','CM','RWB')
+The result_position shows how the new three variables explain the origin dataset for the ability on every position('CF''CDM','ST','LW','CM','RWB')
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_0.jpg)
 
   
@@ -189,7 +196,7 @@ Based on these two graphs, we summarize them as the Attack_Defence. The left pic
 This step takes one parameter:
 Ø  Position (eg:'RB','LM','RM','CF','CDM','ST','LW','CM','RWB')
 Output shows what abilities a good player should have in that position. 
-For the result below, we can see a high positive degree of Attack_Defence(towards Attack), meaning Attack is the key to a good CF. Also dribble-accuracy(negative) meaning accuracy is the key to a good CF. 
+For the result below, we can see a high positive degree of Attack_Defence(towards Attack), meaning Attack is the key to a good CF. Also negative dribble-accuracy(towards Accuracy) meaning accuracy is the key to a good CF. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_3.jpg)
 
  
