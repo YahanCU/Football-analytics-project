@@ -4,6 +4,9 @@
  
 ## Introduction:
 The growing interests in soccer and FIFA drive the creation of our project. Our project provides a well-rounded library presenting summarized statistics and analysis by extracting player personal attributes, player performance attributes, and ratings at all positions. User interaction and data visualization enable users to customize their questions and find answers out of our project. In general, our project is further separated into 4 parts that bring different insights about FIFA to users.
+
+## Installation:
+
  
 ### Part I: (User Interaction): 
 #### < Find the best squad for each formation in terms of players, clubs, countries >
