@@ -150,24 +150,28 @@ This step we calculate the mean of dataset group by the position.
 For this step just run the cell.
 ●	Step2:
 Draw the graph of Cumulative Variance to decide how many new variables should we choose. From the result, we can see that 4 is the best number. 
+![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_00.jpg)
  
 ●	Step3:
 Use the PCA model to reduce the dimension of the dataset. The result_position show how the new four variables replace the original variables. 
- 
+![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_0.jpg)
 The picture below is the relationship between the new variables and the original variables.
+![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_1.jpg)
   
 ●	Step4:
 Results are shown below: 
 First: [Volleys, FInishing, Longshots, Penalties…] All of these performance attributes are associated with Attack. 
 Second: [Sliding tackle, Standing tackle, Interception…] All these performance attributes are associated with Defend.
 Based on these two graphs, we summarize them as the Attack_Defence. The left picture is the original variables which have positive effects for this, the right one is the variables that have a negative effect on this. 
- 
+![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_2.jpg)
+
 
 ●	Step5:
 This step takes one parameter:
 Ø  Position (eg:'RB','LM','RM','CF','CDM','ST','LW','CM','RWB')
 Output shows what abilities a good player should have in that position. 
 For the result below, we can see a high positive degree of Attack_Defence, meaning AD is the key to a good CF. Also special and accuracy physical fitness all have positive effects on  a good CF. 
+![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_3.jpg)
 
  
 ## Bibliography:
