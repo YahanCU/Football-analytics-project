@@ -156,7 +156,7 @@ This function worthbuy()  has no input.
  ![worthbuy](https://github.com/YahanCU/Project-for-tools/blob/master/images/part3-4.png)  
 The output is a single table, containing information of 10 most worth-buying players. Among all worth-buying players, their overall scores are the highest. The table is descending sorted by potential scores.
 
-### Part IV:
+### Part IV:(User Interaction)
 #### < Find required ability for every position >
 This part illustrates the most important abilities each group of positions require based on the current FIFA registered players. The final result is presented through the following process:
 
@@ -165,11 +165,11 @@ This step we calculate the mean of dataset group by the position.
 For this step just run the cell.
 
 ●	Step2:
-Draw the graph of Cumulative Variance to decide how many new variables should we choose. From the result, we can see that 4 is the best number. 
+Draw the graph of Cumulative Variance to decide how many new variables should we choose. From the result, we can see that 3 is the best number. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_00.jpg)
  
 ●	Step3:
-Use the PCA model to reduce the dimension of the dataset. The result_position show how the new four variables replace the original variables. 
+Use the PCA model to reduce the dimension of the dataset. The result_position show how the new three variables explain the origin dataset for the ability of every position. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_0.jpg)
 The picture below is the relationship between the new variables and the original variables.
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_1.jpg)
@@ -186,7 +186,7 @@ Based on these two graphs, we summarize them as the Attack_Defence. The left pic
 This step takes one parameter:
 Ø  Position (eg:'RB','LM','RM','CF','CDM','ST','LW','CM','RWB')
 Output shows what abilities a good player should have in that position. 
-For the result below, we can see a high positive degree of Attack_Defence, meaning AD is the key to a good CF. Also special and accuracy physical fitness all have positive effects on  a good CF. 
+For the result below, we can see a high positive degree of Attack_Defence, meaning AD is the key to a good CF. Also special and accuracy all have positive effects on  a good CF. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_3.jpg)
 
  
