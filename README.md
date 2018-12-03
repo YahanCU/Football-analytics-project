@@ -4,9 +4,6 @@
  
 ## Introduction:
 The growing interests in soccer and FIFA drive the creation of our project. Our project provides a well-rounded library presenting summarized statistics and analysis by extracting player personal attributes, player performance attributes, and ratings at all positions. User interaction and data visualization enable users to customize their questions and find answers out of our project. In general, our project is further separated into 4 parts that bring different insights about FIFA to users.
-
-## Installation:
-
  
 ### Part I: (User Interaction): 
 #### < Find the best squad for each formation in terms of players, clubs, countries >
@@ -172,10 +169,13 @@ Draw the graph of Cumulative Variance to decide how many new variables should we
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_00.jpg)
  
 ●	Step3:
-Use the PCA model to reduce the dimension of the dataset. The result_position show how the new three variables explain the origin dataset for the ability of every position. 
-![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_0.jpg)
-The picture below is the relationship between the new variables and the original variables.
+Use the PCA model to reduce the dimension of the dataset. 
+The picture below is the relationship between the new variables(Special, Attack-Defense,Dribble-Accuracy) and the original variables(Age,Special,Accelaration etc.). Basically,we summarize the original attributes into three attributes. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_1.jpg)
+
+The result_position show how the new three variables explain the origin dataset for the ability of every position('CF''CDM','ST','LW','CM','RWB')
+![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_0.jpg)
+
   
 ●	Step4:
 Results are shown below: 
@@ -189,7 +189,7 @@ Based on these two graphs, we summarize them as the Attack_Defence. The left pic
 This step takes one parameter:
 Ø  Position (eg:'RB','LM','RM','CF','CDM','ST','LW','CM','RWB')
 Output shows what abilities a good player should have in that position. 
-For the result below, we can see a high positive degree of Attack_Defence, meaning AD is the key to a good CF. Also special and accuracy all have positive effects on  a good CF. 
+For the result below, we can see a high positive degree of Attack_Defence(towards Attack), meaning Attack is the key to a good CF. Also dribble-accuracy(negative) meaning accuracy is the key to a good CF. 
 ![graph](https://github.com/YahanCU/Project-for-tools/blob/master/images/pca_3.jpg)
 
  
